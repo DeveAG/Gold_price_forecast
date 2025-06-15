@@ -1,9 +1,0 @@
-streamlit
-yfinance
-pandas
-numpy
-matplotlib
-scikit-learn
-statsmodels
-pmdarima
-prophet
