@@ -25,7 +25,7 @@ def evaluate(y_true, y_pred):
     }
 
 def get_gold_data():
-    df = yf.download('GC=F', start='2018-01-01')
+    df = yf.download('GC=F', start='2000-01-01')
     df = df[['Close']].dropna()
     df.columns = ['Price']
     df.index.name = 'Date'
