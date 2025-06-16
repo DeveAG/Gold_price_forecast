@@ -13,7 +13,7 @@ warnings.filterwarnings("ignore")
 
 def get_gold_data():
     today = datetime.datetime.today().strftime('%Y-%m-%d')
-    df = yf.download('GC=F', start='2018-01-01', end=today)
+    df = yf.download('GC=F', start='2021-01-01', end=today)
     return df[['Open', 'High', 'Low', 'Close']].dropna()
 
 def send_telegram_message(token, chat_id, message):
